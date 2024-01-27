@@ -1,0 +1,547 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgb(245,248,250);
+}
+
+@font-face {
+  font-family: Moderat;
+  src: url(./fonts/Moderat-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div, section {
+  transition-duration: 1s;
+}
+
+
+
+
+/* ----------------------------------------- *\
+  GLOBAL TEXT
+\* ----------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Figtree";
+  text-align: center;
+  word-wrap: break-word;
+  color: rgb(10, 15, 28);
+}
+
+h1 {
+  font-size: 40px;
+  margin: 68px 0 0 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Moderat";
+  font-size: 17px;
+  line-height: 34px;
+  color: rgb(10, 15, 28)
+}
+
+
+
+
+
+/* ----------------------------------------- *\
+  HERO SECTION
+\* ----------------------------------------- */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100vh;
+  background-color: rgb(244, 241, 234);
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  background-image: url(./img/background2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: none;
+}
+
+#hero-image img {
+  position: absolute;
+  top: 15%;
+}
+
+.hero-section .text-panel {
+  background-color: rgb(245,241,233);
+  height: 40vh;
+  margin: 0;
+  max-width: initial;
+}
+
+.hero-section h3 {
+  margin: 24px auto;
+  color: #726F6C;
+}
+
+
+
+
+
+/* ----------------------------------------- *\
+  NAV
+\* ----------------------------------------- */
+
+.nav-content {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 24px;
+}
+
+.open-menu {
+  background: none;
+  padding: 12px;
+  border-style: initial;
+}
+
+button.open-menu {
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #d9d5d1;
+  border-width: 1px;
+}
+
+
+
+
+
+/* ----------------------------------------- *\
+  SEARCH FIELD
+\* ----------------------------------------- */
+
+.search-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  background-color: white;
+  height: 56px;
+  margin: 0px 24px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px; 
+}
+
+.search-field svg { padding: 0px 0px 0px 14px; }
+
+.search-field input {
+  border: none;
+  margin: 0px 14px;
+  width: 100%;
+  height: auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+#main-search-position {
+  position: absolute;
+  width: 100%;
+  top: 60vh;
+  transform: translate(0, -50%)
+}
+
+
+
+
+
+/* ----------------------------------------- *\
+  PANELS
+\* ----------------------------------------- */
+
+.text-panel {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 20px;
+  background-color: white;
+}
+
+.text-panel h2 {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 100px 0 20px 0;
+  margin: 0 auto;
+}
+
+.text-panel p {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.text-panel .flex-cards {
+  gap: 30px
+}
+
+.text-panel .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 25px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-panel p,
+.text-panel h4 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.text-panel h4 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.text-panel h4 span {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(74, 74, 74);
+}
+
+.text-panel .card div {
+  display: flex;
+}
+
+.text-panel .card ul {
+
+  list-style-type: none;
+  margin: 15px 0 0 0;
+  padding: 0 0 15px 0 ;
+  color: rgb(10, 15, 28);
+}
+
+.text-panel .card li {
+  padding: 0 0 15px 20px;
+  line-height: 1.5;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(2, 44, 59);
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto 5px 0 5px;
+  justify-self: flex-end;
+}
+
+.text-panel.video-panel h2 {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 72px 20px 60px;
+  margin: 0 auto;
+}
+
+.video-panel { height: auto; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 110px;
+}
+
+iframe { 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.text-panel2 {
+  display: block;
+  background-color: white;
+  padding: 50px 20px;
+  align-items: baseline;
+  width: 100%;
+}
+
+.text-panel2 h1,
+.text-panel2 h2,
+.text-panel2 h3,
+.text-panel2 p {
+  text-align: left;
+  margin: 0;
+}
+
+.text-panel2 h2 {
+  padding: 12px 0 15px;
+  font-weight: 700;
+}
+
+.text-panel2 p {
+  padding: 0 0 18px;
+}
+
+.picture-box {
+  background-image: url(./img/default-city-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 20px 100px;
+}
+
+.picture-box p {
+  margin: 0;
+  font-size: 17px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picture-box a {
+  font-family: Moderat;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  background-color: white;
+  margin: 0 10px 10px 0;
+  padding: 6px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.picture-box a:visited {
+  color: inherit;
+}
+
+.flex-cards a:hover {
+  opacity: 1;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  transition: none;
+}
+
+.introduction.text-panel2 {
+  padding: 0;
+  margin: 20px;
+  width: auto;
+  max-width: 1100px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px rgb(216, 216, 216);
+}
+
+.introduction .introduction-content {
+  padding: 50px;
+}
+
+.introduction.text-panel2 .icon {
+  padding-bottom: 10px;
+}
+
+.introduction.text-panel2 h2 {
+  font-size: 28px;
+}
+
+.introduction.text-panel2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p.underline {
+  border-bottom: solid ;
+  border-color: rgb(224, 224, 224);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* ----------------------------------------- *\
+  ICONS
+\* ----------------------------------------- */
+
+.icon {
+  height: 48px;
+  width: 48px;
+}
+
+#search-icon {
+  fill:rgb(185, 189, 194)
+}
+
+#fire-icon {
+  background-color: rgb(255, 234, 213);
+  border-radius: 50%;
+}
+
+#fire-icon .st4 {
+  fill: rgb(255, 234, 213);
+}
+
+#fire-icon .st7 {
+  fill: #fc9a50;
+}
+
+#access-icon {
+  fill: rgb(104, 164, 255)
+}
+
+#quality-icon {
+  fill: rgb(42, 228, 145)
+}
+
+#alert-icon {
+  fill: rgb(255, 77, 187);
+}
+
+#done-icon {
+  min-width: 24px;
+  min-height: 24px  ;
+  width: 24px;
+  height: 24px;
+  fill: rgb(74, 74, 74);
+}
+
+
+
+/* ----------------------------------------- *\
+  MEDIA QUERRIES
+\* ----------------------------------------- */
+
+@media (min-width: 480px) {
+  h1 { font-size: 50px; }
+  .hero-section h3 { font-size: 24px;}
+  .search-field {
+    max-width: 432px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 520px) {
+  .picture-box a {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 550px) {
+  .text-panel.video-panel h2 {
+    max-width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .introduction div.flex-container {
+    flex-wrap: nowrap;
+  }
+  .introduction.text-panel2 .flex-container div {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  } 
+}
+
+@media (min-width: 770px) {
+  #hero-image {
+    background-image: url(./img/background1.png);
+  }
+  .flex-container { flex-wrap: nowrap; }
+  .text-panel { margin-inline: 40px; }
+  .text-panel h2 { 
+    max-width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .text-panel p { font-size: 18px; }
+  .text-panel .flex-cards {
+    flex-wrap: nowrap;
+  }
+  .text-panel .card h4 {
+    font-size: 22px;
+    max-width: 320px;
+  }
+  .text-panel .card h4 span {
+    font-size: 20px;
+  }
+  .text-panel2 {
+    padding:  40px 40px 40px 40px;
+    width: auto;
+  }
+  .text-panel2 h2 { font-size: 40px; }
+  .text-panel2 p { font-size: 18px; }
+  .picture-box p { font-size: 22px; }
+  .introduction.text-panel2 { margin: 40px; }
+  .introduction.text-panel2 h2 { font-size: 40px; }
+  .introduction.text-panel2 h3 { font-size: 22px; }
+  .introduction.text-panel2 p.underline { font-size: 18px; }
+}
+
+@media (min-width: 890px) {
+  .text-panel2 { padding-left: 80px; }
+  .text-panel .card h4 {
+    font-size: 26px;
+  }
+  .text-panel .card h4 span {
+    font-size: 22px;
+  }
+  .text-panel .card li {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .picture-box a {
+    font-size: 34px;
+    margin: 0 20px 20px 0;
+    padding: 8px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  .text-panel2 {
+    padding-top: 120px;
+  }
+  .introduction.text-panel2 div {
+    background-image: url(./img/phone.png);
+    background-position: 700px 0px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    transition: none;
+    
+  }
+  .introduction .flex-container,
+  .introduction h2,
+  .introduction p.underline {
+    max-width: 650px;
+    margin-inline: 0 auto;
+  }
+  .introduction-content div {
+    max-width: 530px;
+  }
+  .text-panel .card {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .introduction.text-panel2 {margin-inline: auto;}
+  .text-panel {
+    max-width: 1100px;
+    margin-inline: auto;
+  }
+}

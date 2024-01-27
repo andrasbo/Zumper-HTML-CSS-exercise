@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zumper - Houses, Condos, and Apartments for Rent</title>
+  </head>
+  <body>
+    <section class="hero-section">
+      <header>
+        <div class="nav-content">
+          <!-- <div class="nav-content-wide">
+          <nav>
+            <a class="nav-icon" href="index.html">
+              <img src="./img/logo.png" alt="Zumper-logo"/>
+            </a>
+            <div>
+              <a href="https://multifamily.zumper.com/">Advertise</a>
+              <a href="https://www.zumper.com/manage">Post a listing</a>
+              <button class="open-menu">
+                <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="256" width="256"/><circle cx="128" cy="128" fill="none" r="96" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><circle cx="128" cy="120" fill="none" r="40" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><path d="M63.8,199.4a72,72,0,0,1,128.4,0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></svg>
+                <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+              </button>
+            </div>
+          </nav>
+        </div> -->
+          <div class="nav-content-narrow">
+            <nav>
+              <button class="open-menu">
+                <svg
+                  fill="none"
+                  height="14"
+                  viewBox="0 0 14 12"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect fill="#0a0f1c" height="2" rx="1" width="14"></rect>
+                  <rect
+                    fill="#0a0f1c"
+                    height="2"
+                    rx="1"
+                    width="14"
+                    y="5"
+                  ></rect>
+                  <rect
+                    fill="#0a0f1c"
+                    height="2"
+                    rx="1"
+                    width="14"
+                    y="10"
+                  ></rect>
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="hero-image">
+        <img
+          src="./img/logo-square2.svg"
+          alt="Zumper"
+          height="88px"
+          width="110px"
+        />
+      </div>
+      <div class="text-panel">
+        <h1>Find your forever.<br />Or your for now.</h1>
+        <h3>Houses and apartments for rent<br />that fit your timeline.</h3>
+        <div id="main-search-position">
+          <div id="main-search" class="search-field">
+            <svg
+              id="search-icon"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.3198574,14.9056439 L21.7071068,20.2928932 L20.2928932,21.7071068 L14.9056439,16.3198574 C13.5509601,17.3729184 11.8487115,18 10,18 C5.581722,18 2,14.418278 2,10 C2,5.581722 5.581722,2 10,2 C14.418278,2 18,5.581722 18,10 C18,11.8487115 17.3729184,13.5509601 16.3198574,14.9056439 Z M10,16 C13.3137085,16 16,13.3137085 16,10 C16,6.6862915 13.3137085,4 10,4 C6.6862915,4 4,6.6862915 4,10 C4,13.3137085 6.6862915,16 10,16 Z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search by location or property name"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-panel video-panel">
+      <h2>Renting a new place is the start of something great.</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/90eLda0jMGY?si=4FBx0dQUerh9T46x"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section class="flex-container">
+      <div class="text-panel2">
+        <svg
+          id="fire-icon"
+          class="icon"
+          style="enable-background: new 0 0 64 64"
+          version="1.1"
+          viewBox="0 0 64 64"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g>
+            <path
+              class="st7"
+              d="M21.04,20.63c0,0-1.79,8.99-0.96,11.47c0,0,1.1-13.6,11.67-24.1c0,0-0.34,8.79,5.15,13.25s6.73,11.4,6.73,11.4   s0.62-4.74-1.24-12.33c0,0,11.67,12.12,6.32,25.65c0,0-6.45,14.9-24.92,8.38S17.74,22.97,21.04,20.63z"
+            />
+            <path
+              class="st4"
+              d="M40.75,32.12c0.17,3.81-1.55,4.81-2.94,5.01c-0.89,0.13-1.79-0.1-2.57-0.53c-7.65-4.15-3.72-14.29-3.72-14.29   c-5.01,4.79-2.4,14.74-2.4,14.74s1.55,5.64-1.62,6.13c-1.59,0.25-2.33-0.39-2.67-1.08c-0.31-0.64-0.31-1.39-0.04-2.05   c2.15-5.34,0.31-8.36,0.31-8.36c-1.03,3.06-2.12,5.08-2.91,6.29c-1.12,1.72-1.83,3.68-1.93,5.73C19.9,51.35,26.3,54.4,26.3,54.4   c10.51,5.36,15.23-4.44,15.23-4.44C46.96,39.52,40.75,32.12,40.75,32.12z"
+            />
+          </g>
+        </svg>
+        <h2>Our hottest cities.</h2>
+        <p>
+          Find sweet deals on apartments and houses for rent in our most popular
+          locations.
+        </p>
+      </div>
+      <div class="picture-box">
+        <p>Choose a popular city</p>
+        <div class="flex-cards">
+          <a href="">New York City<span>🗽</span></a>
+          <a href="">Chicago<span>💨</span></a>
+          <a href="">Los Angeles<span>🌴</span></a>
+          <a href="">Boston<span>🐟</span></a>
+          <a href="">Houston<span>🚀</span></a>
+          <a href="">Denver<span>🗻</span></a>
+          <a href="">Dallas<span>⭐</span></a>
+          <a href="">San Francisco<span>🌉</span></a>
+          <a href="">Austin<span>🎤</span></a>
+          <a href="">Atlanta<span>🍑</span></a>
+          <a href="">Toronto<span>🌇</span></a>
+          <a href="">Vancouver<span>🌲</span></a>
+          <a href="">Ottawa<span>💂</span></a>
+          <a href="">Montreal<span>🎆</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="introduction text-panel2">
+      <div class="introduction-content">
+        <h2>So, what's Zumper?</h2>
+        <p class="underline">
+          Zumper is used by millions of renters to find houses, rooms, condos,
+          or apartments for rent.
+        </p>
+        <div class="flex-container">
+          <svg
+            id="access-icon"
+            class="icon"
+            version="1.1"
+            viewBox="0 0 50 50"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g id="Layer_1_1_">
+              <path
+                d="M25,1C11.767,1,1,11.767,1,25s10.767,24,24,24s24-10.767,24-24S38.233,1,25,1z M25,47C12.869,47,3,37.131,3,25   S12.869,3,25,3s22,9.869,22,22S37.131,47,25,47z"
+              />
+              <rect height="2" width="24" x="13" y="14" />
+              <rect height="2" width="24" x="13" y="24" />
+              <rect height="2" width="24" x="13" y="34" />
+            </g>
+          </svg>
+          <div>
+            <h3>Apply online</h3>
+            <p>
+              Submit digital rental applications and credit reports with
+              Zumper's screening service, powered by TransUnion™.
+            </p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <svg
+            id="quality-icon"
+            class="icon"
+            version="1.1"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M256,6.998c-137.533,0-249,111.467-249,249c0,137.534,111.467,249,249,249s249-111.467,249-249  C505,118.464,393.533,6.998,256,6.998z M256,485.078c-126.309,0-229.08-102.771-229.08-229.081  c0-126.31,102.771-229.08,229.08-229.08c126.31,0,229.08,102.771,229.08,229.08C485.08,382.307,382.31,485.078,256,485.078z"
+            />
+            <polygon
+              points="384.235,158.192 216.919,325.518 127.862,236.481 113.72,250.624 216.919,353.803 398.28,172.334   "
+            />
+          </svg>
+          <div>
+            <h3>Quality listings</h3>
+            <p>
+              Our inventory is updated in real-time, so you'll always see new
+              rentals on Zumper first.
+            </p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <svg
+            id="alert-icon"
+            class="icon"
+            version="1.1"
+            viewBox="0 0 50 50"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <path
+                d="M19,25c0,3.309,2.691,6,6,6s6-2.691,6-6s-2.691-6-6-6S19,21.691,19,25z M29,25c0,2.206-1.794,4-4,4s-4-1.794-4-4   s1.794-4,4-4S29,22.794,29,25z"
+              />
+              <path
+                d="M40.557,9.443C44.712,13.599,47,19.123,47,25s-2.288,11.401-6.443,15.557l1.414,1.414C46.503,37.438,49,31.411,49,25   s-2.497-12.438-7.029-16.971L40.557,9.443z"
+              />
+              <path
+                d="M36.313,36.313C39.335,33.293,41,29.274,41,25s-1.665-8.293-4.687-11.313l-1.414,1.414C37.544,17.744,39,21.26,39,25   s-1.456,7.256-4.101,9.899L36.313,36.313z"
+              />
+              <path
+                d="M13.687,13.687C10.665,16.707,9,20.726,9,25s1.665,8.293,4.687,11.313l1.414-1.414C12.456,32.256,11,28.74,11,25   s1.456-7.256,4.101-9.899L13.687,13.687z"
+              />
+              <path
+                d="M9.443,40.557C5.288,36.401,3,30.877,3,25S5.288,13.599,9.443,9.443L8.029,8.029C3.497,12.562,1,18.589,1,25   s2.497,12.438,7.029,16.971L9.443,40.557z"
+              />
+            </g>
+          </svg>
+          <div>
+            <h3>Realtime alerts</h3>
+            <p>
+              Filter by location, price range, bedroom count, pet-friendly, or
+              amenity and set an alert to get notifications when a new listing
+              is posted.
+            </p>
+          </div>
+        </div>
+        <a href="" style="text-decoration: none">
+          <img src="./img/app_store.svg" alt="" />
+        </a>
+        <a href="" style="text-decoration: none">
+          <img src="./img/play_store.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section class="text-panel">
+      <h2>Reach quality renters and<br />fill vacancies faster.</h2>
+      <p>
+        We have marketing solutions for landlords, agents, and multifamily
+        professionals.
+      </p>
+      <div class="flex-cards">
+        <div class="card">
+          <h4>
+            Landlords and Agents <br /><span
+              >Manage your rentals with our free leasing tools.</span
+            >
+          </h4>
+          <ul>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>
+                Reach over 13 million high-quality renters actively searching on
+                our network
+              </li>
+            </div>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>
+                List a property for rent and collect online rental applications
+              </li>
+            </div>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>
+                Screen tenants with full credit reports and background checks
+              </li>
+            </div>
+          </ul>
+          <a href="">Learn more</a>
+        </div>
+        <div class="card">
+          <h4>
+            Multifamily Communities <br /><span
+              >Advertise with us to optimize your leasing success.</span
+            >
+          </h4>
+          <ul>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>
+                Reach over 13 million high-quality renters actively searching on
+                our network
+              </li>
+            </div>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>
+                Get exposure across our broad network of leading apartment
+                search sites
+              </li>
+            </div>
+            <div>
+              <svg
+                id="done-icon"
+                class="icon"
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M18 32.34l-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.83-2.83z"
+                />
+              </svg>
+              <li>Receive ongoing support from a dedicated Account Manager</li>
+            </div>
+          </ul>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
